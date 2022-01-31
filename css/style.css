@@ -16,6 +16,15 @@ img {
 .colour-beige{
    background-color: #F1EBE7;
 }
+input{
+   height: 40px;
+   border-radius: 5px;
+}
+.notification{
+   height: 50px;
+   width: 50px;
+   position: relative;
+}
 
 /* ! BACKGROUND SECTION  */
 .back-ground {
@@ -66,6 +75,10 @@ img {
    padding: 5px;
    color: grey;
 }
+.notification .fa-bell-slash{
+   color: #83D5FB;
+
+}
 
 
 /* | section message */
@@ -75,3 +88,4 @@ img {
 #message-contact-selected{
    background-image: url('..//img/mine.jpg');
 }
+
