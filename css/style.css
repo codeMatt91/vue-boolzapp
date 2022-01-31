@@ -21,16 +21,27 @@
   left: 10%;
   width: 80%;
   height: 90%;
-  background-color: brown;
+  background-color: white;
+}
+.spa .row{
+   margin: 0 0px;
+}
+.section{
+   height: 10%;
+   background-color: chartreuse;
 }
 
+/* | section contact */
 #contact-area{
-   width: 33.3%;
    background-color: blue;
-   
+}
+#serch-contact {
+   height: 7%;
+   background-color: teal;
 }
 
+/* | section message */
 #message-area {
    height: 100%;
-   background-color: brown;
+   background-color: yellow;
 }
