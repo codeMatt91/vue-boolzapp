@@ -1,3 +1,5 @@
+
+/* ! BACKGROUND SECTION  */
 .back-ground {
   height: 100vh;
   width: 100vw;
@@ -12,13 +14,23 @@
   background-color: #d2d6d0;
 }
 
+/* ! APP SECTION  */
 .spa {
   position: absolute;
   top: 5%;
   left: 10%;
   width: 80%;
   height: 90%;
+  background-color: brown;
+}
 
-  background-color: red;
+#contact-area{
+   width: 33.3%;
+   background-color: blue;
+   
+}
 
+#message-area {
+   height: 100%;
+   background-color: brown;
 }
