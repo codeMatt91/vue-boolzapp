@@ -18,19 +18,42 @@
       <div id="color-grey"></div>
 
       <!-- # APP SECTION  -->
-      <div class="spa">
+      <div class="spa" id="root">
          <div class="row h-100 gx-0">
             <!-- # SECTION CONTACT -->
             <div class="col-4 h-100">
                <div id="contact-area" class="d-flex flex-column h-100">
-                  <div class="section" id="user">
-                     
+                  <div class="section p-3" id="user">
+                        <img :src="`img/avatar${user.avatar}.jpg`" alt="">
+                        <div class="mx-2">{{user.name}}</div>
+                        <div class="icon flex-grow-1 text-end">
+                           <i class="fas fa-circle-notch"></i>
+                           <i class="fas fa-comment-alt"></i>
+                           <i class="fas fa-ellipsis-v"></i>
+                        </div>
                   </div>
-                  <div class="section" id="active-notifications"></div>
-                  <div id="serch-contact"></div>
-                  <div class="flex-grow-1" id="list-contact"></div>
+                  <div class="section p-3" id="active-notifications">
+                     <img src="" alt="">
+                     <div class="d-flex flex-column mx-2">
+                        <div>Ricevi notifiche di nuovi messaggi</div>
+                        <div class="color-grey text-decoration-underline">Attiva notifiche desktop</div>
+                     </div>
+                  </div>
+                  <div id="serch-contact" class="p-3">
+                     <i class="fas fa-search"></i>
+                     <input class="flex-grow-1 ms-2 border-0" type="text" placeholder="Cerca o inizia una nuova ricerca">
+                  </div>
+                  <div class="flex-grow-1 p-3" id="list-contact">
+                     <ul class="list-unstyled">
+                        <li v-for="(contact, index) in contacts">
+                           <img :src="`img/avatar_${index + 1}.jpg`" alt="">
+                           <div></div>
+                        </li>
+                     </ul>
+                  </div>
                </div>
             </div>
+
             <!-- # SECTION MESSAGE -->
             <div class="col-8 h-100">
                <div id="message-area" class="d-flex flex-column">

@@ -1,3 +1,16 @@
+/* ! GENERIC RULES  */
+img {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+.fs-12{
+   font-size: 12px;
+}
+.color-grey{
+   color: rgb(107, 107, 107);
+}
+
 
 /* ! BACKGROUND SECTION  */
 .back-ground {
@@ -25,21 +38,29 @@
 }
 
 .section{
-   height: 10%;
+   height: 80px;
    background-color: chartreuse;
+   display: flex;
+   align-items: center;
+   font-size: 13px;
 }
 
 
 /* | section contact */
 #contact-area{
-   background-color: blue;
+   
 }
 #serch-contact {
-   height: 7%;
-   background-color: teal;
+   height: 50px;
+   display: flex;
+   align-items: center;
 }
 #active-notifications{
-   background-color: #7FCFF3;
+   background-color: #83D5FB;
+}
+#user .fas {
+   padding: 5px;
+   color: grey;
 }
 
 
