@@ -23,9 +23,7 @@
   height: 90%;
   background-color: white;
 }
-.spa .row{
-   margin: 0 0px;
-}
+
 .section{
    height: 10%;
    background-color: chartreuse;
@@ -40,6 +38,7 @@
    height: 7%;
    background-color: teal;
 }
+
 
 /* | section message */
 #message-area {
