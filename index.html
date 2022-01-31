@@ -23,7 +23,7 @@
             <!-- # SECTION CONTACT -->
             <div class="col-4 h-100">
                <div id="contact-area" class="d-flex flex-column h-100">
-                  <div class="section p-3" id="user">
+                  <div class="section p-3 colour-beige" id="user">
                         <img :src="`img/avatar${user.avatar}.jpg`" alt="">
                         <div class="mx-2">{{user.name}}</div>
                         <div class="icon flex-grow-1 text-end">
@@ -57,7 +57,7 @@
             <!-- # SECTION MESSAGE -->
             <div class="col-8 h-100">
                <div id="message-area" class="d-flex flex-column">
-                  <div class="section" id="contact-selected">
+                  <div class="section colour-beige" id="contact-selected">
                      <div class="d-flex p-3">
                         <img src="" alt="">
                         <div class="ps-2">
@@ -71,8 +71,23 @@
                         <i class="fas fa-ellipsis-v fs-20 color-grey"></i>
                      </div>
                   </div>
-                  <div class="flex-grow-1" id="message-contact-selected"></div>
-                  <div class="section" id="text-user"></div>
+                  <div class="flex-grow-1 px-5" id="message-contact-selected">
+                     <div></div>
+                     <div></div>
+                  </div>
+                  <div class="section colour-beige" id="text-user">
+                       <div class="row g-0 align-items-center w-100">
+                          <div class="col-2">
+                           <i class="far fa-smile fa-2x color-grey ps-5"></i>
+                          </div>
+                          <div class="col-8">
+                           <input type="text" class="w-100 border-0" placeholder="Scrivi un messaggio">
+                          </div>
+                          <div class="col-2 text-end">
+                           <i class="fas fa-microphone fa-2x color-grey pe-5"></i>
+                          </div>
+                       </div>
+                  </div>
                </div>
             </div>
          </div>

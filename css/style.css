@@ -13,7 +13,9 @@ img {
 .fs-20 {
    font-size: 20px;
 }
-
+.colour-beige{
+   background-color: #F1EBE7;
+}
 
 /* ! BACKGROUND SECTION  */
 .back-ground {
@@ -37,7 +39,7 @@ img {
   left: 10%;
   width: 80%;
   height: 90%;
-  background-color: white;
+  background-color: rgb(240, 238, 238);
 }
 
 .section{
@@ -50,7 +52,7 @@ img {
 
 /* | section contact */
 #contact-area{
-   
+   border-right: 1px solid blue;
 }
 #serch-contact {
    height: 50px;
@@ -70,7 +72,6 @@ img {
 #message-area {
    height: 100%;
 }
-
-#contact-selected {
-
+#message-contact-selected{
+   background-image: url('..//img/mine.jpg');
 }
