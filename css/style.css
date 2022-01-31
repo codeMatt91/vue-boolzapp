@@ -1,29 +1,41 @@
 /* ! GENERIC RULES  */
 img {
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
-.fs-12{
-   font-size: 12px;
+.fs-12 {
+  font-size: 12px;
 }
-.color-grey{
-   color: rgb(131, 131, 131);
+.color-grey {
+  color: rgb(131, 131, 131);
 }
 .fs-20 {
-   font-size: 20px;
+  font-size: 20px;
 }
-.colour-beige{
-   background-color: #F1EBE7;
+.colour-beige {
+  background-color: #f1ebe7;
 }
-input{
-   height: 40px;
-   border-radius: 5px;
+input {
+  height: 40px;
+  border-radius: 5px;
 }
-.notification{
+.message {
+   background-color: #cff8b1;
+   border-radius: 15px;
+   width: auto;
+   padding: 10px;
+   font-size: 15px;
    height: 50px;
-   width: 50px;
-   position: relative;
+   margin-top: 10px;
+}
+.message-user {
+   display: flex;
+   justify-content: end;
+}
+.message-contact {
+  display: flex;
+  justify-content: start;
 }
 
 /* ! BACKGROUND SECTION  */
@@ -51,41 +63,42 @@ input{
   background-color: rgb(240, 238, 238);
 }
 
-.section{
-   height: 80px;
-   display: flex;
-   align-items: center;
-   font-size: 13px;
+.section {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
 }
-
 
 /* | section contact */
-#contact-area{
-   border-right: 1px solid blue;
+#contact-area {
+  border-right: 1px solid blue;
 }
 #serch-contact {
-   height: 50px;
-   display: flex;
-   align-items: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
-#active-notifications{
-   background-color: #83D5FB;
+#active-notifications {
+  background-color: #83d5fb;
 }
 .section .fas {
-   padding: 5px;
-   color: grey;
+  padding: 5px;
+  color: grey;
 }
-.notification .fa-bell-slash{
-   color: #83D5FB;
-
+.notification {
+  height: 50px;
+  width: 50px;
+  position: relative;
 }
-
+.notification .fa-bell-slash {
+  color: #83d5fb;
+}
 
 /* | section message */
 #message-area {
-   height: 100%;
+  height: 100%;
 }
-#message-contact-selected{
-   background-image: url('..//img/mine.jpg');
+#message-contact-selected {
+  background-image: url("..//img/mine.jpg");
 }
-

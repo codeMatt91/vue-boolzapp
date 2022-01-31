@@ -23,7 +23,7 @@ const root = new Vue({
          avatar: '_3',
       },
       {
-         name: 'Luisa',
+         name: 'Giorgio',
          avatar: '_4',
       },
       ]
