@@ -5,6 +5,7 @@ Vue.config.devtools = true;
 const root = new Vue({
    el: '#root',
    data: {
+      d : new Date,
       user: {
          name: 'Beatrice Rossi',
          avatar: '_io'
@@ -27,5 +28,8 @@ const root = new Vue({
          avatar: '_4',
       },
       ]
+   },
+   methods: {
+      
    }
 })
