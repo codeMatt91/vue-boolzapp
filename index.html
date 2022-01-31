@@ -45,9 +45,9 @@
                   </div>
                   <div class="flex-grow-1 p-3" id="list-contact">
                      <ul class="list-unstyled">
-                        <li v-for="(contact, index) in contacts">
-                           <img :src="`img/avatar_${index + 1}.jpg`" alt="">
-                           <div></div>
+                        <li class="d-flex align-items-center pb-3" v-for="(contact, index) in contacts">
+                           <img :src="`img/avatar_${index + 1}.jpg`" :alt="contact.name">
+                           <div>{{ contact.name }}</div>
                         </li>
                      </ul>
                   </div>
