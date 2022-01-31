@@ -38,6 +38,9 @@
    height: 7%;
    background-color: teal;
 }
+#active-notifications{
+   background-color: #7FCFF3;
+}
 
 
 /* | section message */
