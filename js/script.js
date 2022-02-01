@@ -111,7 +111,7 @@ const root = new Vue({
          const message = {
             date: this.d,
             text: this.personalMessage,
-            status: 'received'
+            status: 'sent'
          }
 
          if (message !== '') {
