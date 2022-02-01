@@ -22,25 +22,26 @@ input {
 }
 .message {
   text-align: end;
-   border-radius: 15px;
-   width: auto;
-   padding: 10px;
-   font-size: 14px;
-   height: 50px;
-   margin-top: 10px;
+  border-radius: 15px;
+  width: auto;
+  padding: 10px;
+  font-size: 14px;
+  height: 50px;
+  margin-top: 10px;
+  box-shadow: 5px 10px 10px rgba(145, 144, 144, 0.5);
 }
 .sent {
-   display: flex;
-   justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 .received {
   display: flex;
   justify-content: start;
 }
-.bg-green{
+.bg-green {
   background-color: #cff8b1;
 }
-.selected{
+.selected {
   background-color: rgba(212, 211, 211, 0.5);
 }
 

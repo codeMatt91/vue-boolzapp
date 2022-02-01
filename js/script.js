@@ -119,7 +119,7 @@ const root = new Vue({
          }
          this.personalMessage = '';
 
-         const time = setTimeout(this.isAnswerMessage, 3000);
+         const time = setTimeout(this.isAnswerMessage, 2000);
          
       },
       isAnswerMessage() {
