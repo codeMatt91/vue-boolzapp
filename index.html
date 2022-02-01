@@ -24,7 +24,7 @@
             <div class="col-4 h-100">
                <div id="contact-area" class="d-flex flex-column h-100">
                   <div class="section p-3 colour-beige" id="user">
-                        <img :src="`img/avatar${user.avatar}.jpg`" alt="">
+                        <img :src="`img/avatar${user.avatar}.jpg`" :alt="user.name">
                         <div class="mx-2 fs-6">{{user.name}}</div>
                         <div class="icon flex-grow-1 text-end">
                            <i class="fas fa-circle-notch"></i>
