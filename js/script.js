@@ -118,6 +118,9 @@ const root = new Vue({
             this.contacts[this.currenContact].messages.push(message);
          }
          this.personalMessage = '';
+
+         const time = setTimeout(this.isAnswerMessage, 3000);
+         
       },
       isAnswerMessage() {
          const answer = {
@@ -125,7 +128,7 @@ const root = new Vue({
             text: 'Per capire se ho capito',
             status: 'received'
          }
-         return answer;
+         this.contacts[this.currenContact].messages.push(answer);
       }
    }
    
