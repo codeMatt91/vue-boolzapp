@@ -79,8 +79,8 @@
                      </div>
                   </div>
                   <div class="flex-grow-1 p-5 overflow-auto" id="message-contact-selected">
-                     <div v-for="(contact, index) in contacts" v-if="isChecked(index)">
-                        <div v-for="(message, index) in contact.messages" 
+                     <div >
+                        <div v-for="(message, index) in contacts[currenContact].messages" 
                         :class="message.status === 'sent' ? 'sent' : 'received'">
                            <div class="message"> 
                               {{ message.text }}
@@ -105,7 +105,7 @@
                            <input type="text" class="w-100 border-0" 
                            placeholder="Scrivi un messaggio"
                            v-model="personalMessage"
-                           @keyup.enter="isSentMessage()">
+                           @keyup.enter="isSentMessage">
                           </div>
                           <div class="col-2 text-end">
                            <i class="fas fa-microphone fa-2x color-grey pe-5"></i>

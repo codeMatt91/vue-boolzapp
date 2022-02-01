@@ -108,14 +108,14 @@ const root = new Vue({
          return index === this.currenContact;
       },
       isSentMessage() {
+         if (this.personalMessage !== '') {
          const message = {
             date: this.d,
             text: this.personalMessage,
             status: 'sent'
          }
 
-         if (message !== '') {
-            this.messages.push(message);
+            this.contacts[this.currenContact].messages.push(message);
          }
          this.personalMessage = '';
       }
