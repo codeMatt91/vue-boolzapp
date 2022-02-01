@@ -9,7 +9,7 @@ const root = new Vue({
    data: {
       personalMessage: '',
       currenContact: 0,
-      d : dayjs().format('DD/MM/YYYY HH:MM:ss'),
+      d : dayjs().format('DD/MM/YYYY hh:mm:ss'),
       user: {
          name: 'Beatrice Rossi',
          avatar: '_io'
