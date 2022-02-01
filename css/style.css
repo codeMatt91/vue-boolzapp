@@ -21,11 +21,12 @@ input {
   border-radius: 5px;
 }
 .message {
+  text-align: end;
    background-color: #cff8b1;
    border-radius: 15px;
    width: auto;
    padding: 10px;
-   font-size: 15px;
+   font-size: 14px;
    height: 50px;
    margin-top: 10px;
 }

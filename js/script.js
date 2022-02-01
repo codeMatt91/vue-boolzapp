@@ -7,6 +7,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
    el: '#root',
    data: {
+      personalMessage: '',
       currenContact: 0,
       d : dayjs().format('DD/MM/YYYY HH:MM:ss'),
       user: {
@@ -107,7 +108,11 @@ const root = new Vue({
          return index === this.currenContact;
       },
       isSentMessage() {
-         return 
+         const message = this.personalMessage.trim();
+
+         if (message !== '') {
+            this.messages.push({})
+         }
       }
    }
    
