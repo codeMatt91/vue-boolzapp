@@ -65,7 +65,7 @@
             <div class="col-8 h-100">
                <div id="message-area" class="d-flex flex-column">
                   <div class="section colour-beige" id="contact-selected">
-                     <div v-for="(contact, index) in contacts" class="d-flex p-3" :class="">
+                     <div v-for="(contact, index) in contacts" v-if="isChecked(index)" class="d-flex p-3" :class="">
                         <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <div class="ps-2">
                            <div>{{contact.name}}</div>
