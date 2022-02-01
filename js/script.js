@@ -7,7 +7,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
    el: '#root',
    data: {
-      currenContact: '',
+      currenContact: 0,
       d : dayjs().format('DD/MM/YYYY HH:MM:ss'),
       user: {
          name: 'Beatrice Rossi',

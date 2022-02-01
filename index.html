@@ -65,10 +65,10 @@
             <div class="col-8 h-100">
                <div id="message-area" class="d-flex flex-column">
                   <div class="section colour-beige" id="contact-selected">
-                     <div class="d-flex p-3">
-                        <img src="img/avatar_1.jpg" alt="">
+                     <div v-if="(index === currentContact)" v-for="(contact, index) in contacts" class="d-flex p-3">
+                        <img :src="`img/avatar_${contact.avatar}.jpg`" alt="">
                         <div class="ps-2">
-                           <div>Michele</div>
+                           <div>{{contact.name}}</div>
                            <span>Ultimo aggiornamento <span >{{ d }}</span></span>
                         </div>
                      </div>
