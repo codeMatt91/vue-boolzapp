@@ -22,7 +22,6 @@ input {
 }
 .message {
   text-align: end;
-   background-color: #cff8b1;
    border-radius: 15px;
    width: auto;
    padding: 10px;
@@ -38,7 +37,9 @@ input {
   display: flex;
   justify-content: start;
 }
-
+.bg-green{
+  background-color: #cff8b1;
+}
 .selected{
   background-color: rgba(212, 211, 211, 0.5);
 }

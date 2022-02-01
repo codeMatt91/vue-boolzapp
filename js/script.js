@@ -118,6 +118,14 @@ const root = new Vue({
             this.contacts[this.currenContact].messages.push(message);
          }
          this.personalMessage = '';
+      },
+      isAnswerMessage() {
+         const answer = {
+            date: this.d,
+            text: 'Per capire se ho capito',
+            status: 'received'
+         }
+         return answer;
       }
    }
    

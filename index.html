@@ -79,21 +79,16 @@
                      </div>
                   </div>
                   <div class="flex-grow-1 p-5 overflow-auto" id="message-contact-selected">
-                     <div >
+                     <div>
                         <div v-for="(message, index) in contacts[currenContact].messages" 
                         :class="message.status === 'sent' ? 'sent' : 'received'">
-                           <div class="message"> 
+                           <div class="message" 
+                           :class="message.status === 'sent' ? 'bg-green' : 'bg-white'"> 
                               {{ message.text }}
                               <div class="text-right text-muted"><small>{{ d }}</small></div>
                            </div>
                         </div>
                      </div>
-                     <!-- <div v-for="message in messages" class="sent">
-                        <div class="message">{{ message.text }}</div>
-                     </div>
-                     <div class="received ">
-                        <div class="message bg-white">{{ contacts.text }}</div>
-                     </div> -->
                      
                   </div>
                   <div class="section colour-beige" id="text-user">
