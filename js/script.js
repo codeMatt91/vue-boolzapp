@@ -105,6 +105,9 @@ const root = new Vue({
       },
       isChecked(index) {
          return index === this.currenContact;
+      },
+      isSentMessage() {
+         return 
       }
    }
    
