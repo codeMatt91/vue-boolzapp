@@ -65,8 +65,8 @@
             <div class="col-8 h-100">
                <div id="message-area" class="d-flex flex-column">
                   <div class="section colour-beige" id="contact-selected">
-                     <div v-if="(index === currentContact)" v-for="(contact, index) in contacts" class="d-flex p-3">
-                        <img :src="`img/avatar_${contact.avatar}.jpg`" alt="">
+                     <div v-for="(contact, index) in contacts" class="d-flex p-3" :class="">
+                        <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <div class="ps-2">
                            <div>{{contact.name}}</div>
                            <span>Ultimo aggiornamento <span >{{ d }}</span></span>
@@ -79,8 +79,11 @@
                      </div>
                   </div>
                   <div class="flex-grow-1 p-5 overflow-auto" id="message-contact-selected">
-                     <div v-for="message in contacts.messages" :class="message.status ? 'sent' : 'received'">
-                        <div class="message">{{ message.text }}</div>
+                     <div class="sent">
+                        <div class="message">{{ contacts.text }}</div>
+                     </div>
+                     <div class="received ">
+                        <div class="message bg-white">{{ contacts.text }}</div>
                      </div>
                      
                   </div>
