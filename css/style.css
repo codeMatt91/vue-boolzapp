@@ -29,13 +29,17 @@ input {
    height: 50px;
    margin-top: 10px;
 }
-.message-user {
+.sent {
    display: flex;
    justify-content: end;
 }
-.message-contact {
+.received {
   display: flex;
   justify-content: start;
+}
+
+.selected{
+  background-color: rgba(212, 211, 211, 0.5);
 }
 
 /* ! BACKGROUND SECTION  */
