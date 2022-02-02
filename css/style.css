@@ -59,10 +59,14 @@ input {
   position: absolute;
   top: 15px;
   right: 5px;
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   z-index: 1;
   border-radius: 10px;
+  width: 150px;
+}
+.message ul li:hover {
+  background-color: #cff8b1;
 }
 
 /* ! BACKGROUND SECTION  */
