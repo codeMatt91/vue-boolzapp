@@ -153,5 +153,14 @@ const root = new Vue({
         this.showCurtain = "d-none";
       }
     },
+    deletMessage(index) {
+      this.contacts[this.currenContact].messages.splice(index, 1);
+      // this.contacts[currenContact].messages = this.contacts[
+      //   currenContact
+      // ].messages.filter((message, i) => {
+      //   if (message[i] === currentMessage) return true;
+      //   return false;
+      // });
+    },
   },
 });
