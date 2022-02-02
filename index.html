@@ -128,8 +128,8 @@
                       class="message"
                       :class="message.status === 'sent' ? 'bg-green' : 'bg-white'"
                     >
-                    <i class="arrow-down fas fa-chevron-down" @click="curtainClicked"></i>
-                      <div class="curtain" :class="showCurtain">
+                    <i class="arrow-down fas fa-chevron-down" @click="curtainClicked(index)"></i>
+                      <div class="curtain" :class="showCurtain" v-if="currentMessage === index">
                          <ul class="list-unstyled">
                             <li role="button" class="p-2 fs-12">Info Messaggio</li>
                             <li role="button" class="p-2 fs-12">Cancella Messaggio</li>

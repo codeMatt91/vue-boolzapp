@@ -7,6 +7,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
   el: "#root",
   data: {
+    currentMessage: 0,
     showCurtain: "d-none",
     search: "",
     personalMessage: "",
@@ -143,11 +144,13 @@ const root = new Vue({
         }
       }
     },
-    curtainClicked() {
+    curtainClicked(index) {
+      this.currentMessage = index;
+
       if (this.showCurtain === "d-none") {
         this.showCurtain = "d-block";
       } else {
-         this.showCurtain = 'd-none'
+        this.showCurtain = "d-none";
       }
     },
   },
