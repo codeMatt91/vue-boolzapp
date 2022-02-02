@@ -21,14 +21,24 @@ input {
   border-radius: 5px;
 }
 .message {
+  position: relative;
   text-align: end;
-  border-radius: 15px;
+  border-radius: 10px;
   width: auto;
   padding: 10px;
   font-size: 14px;
-  height: 50px;
-  margin-top: 10px;
+  height: 60px;
+  margin-top: 15px;
   box-shadow: 5px 10px 10px rgba(145, 144, 144, 0.5);
+}
+.message:hover::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
 }
 .sent {
   display: flex;
