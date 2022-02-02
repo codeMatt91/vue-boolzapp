@@ -43,16 +43,19 @@
                         <div class="color-grey text-decoration-underline">Attiva notifiche desktop</div>
                      </div>
                   </div>
+                  <!-- # serch bar -->
                   <div id="serch-contact" class="p-3">
                      <i class="fas fa-search"></i>
                      <input class="flex-grow-1 ms-2 border-0" type="text" placeholder="Cerca o inizia una nuova ricerca">
                   </div>
+                  <!-- # show contacts  -->
                   <div class="flex-grow-1 p-3 overflow-scroll" id="list-contact">
                      <ul class="list-unstyled">
                         <li class="d-flex align-items-center mb-3" role="button" 
                         v-for="(contact, index) in contacts"
                         :class="(index === currenContact) ? 'selected' : ''"
-                        @click="isSelected(index)">
+                        @click="isSelected(index)"
+                        v-if="contacts[index].visible">
                            <img :src="`img/avatar_${index + 1}.jpg`" :alt="contact.name">
                            <div>{{ contact.name }}</div>
                         </li>
@@ -79,6 +82,7 @@
                      </div>
                   </div>
                   <div class="flex-grow-1 p-5 overflow-auto" id="message-contact-selected">
+                     <!-- # show messages -->
                      <div>
                         <div v-for="(message, index) in contacts[currenContact].messages" 
                         :class="message.status === 'sent' ? 'sent' : 'received'">
@@ -89,7 +93,7 @@
                            </div>
                         </div>
                      </div>
-                     
+                     <!-- # section input text -->
                   </div>
                   <div class="section colour-beige" id="text-user">
                        <div class="row g-0 align-items-center w-100">

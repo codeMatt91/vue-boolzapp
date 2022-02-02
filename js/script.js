@@ -7,6 +7,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
    el: '#root',
    data: {
+      serch: '',
       personalMessage: '',
       currenContact: 0,
       d : dayjs().format('DD/MM/YYYY hh:mm:ss'),
