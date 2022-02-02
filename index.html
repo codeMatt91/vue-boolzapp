@@ -46,7 +46,10 @@
                   <!-- # serch bar -->
                   <div id="serch-contact" class="p-3">
                      <i class="fas fa-search"></i>
-                     <input class="flex-grow-1 ms-2 border-0" type="text" placeholder="Cerca o inizia una nuova ricerca">
+                     <input class="flex-grow-1 ms-2 border-0" type="text" 
+                     placeholder="Cerca o inizia una nuova ricerca"
+                     v-model="search"
+                     @keyup.enter="searchContact()">
                   </div>
                   <!-- # show contacts  -->
                   <div class="flex-grow-1 p-3 overflow-scroll" id="list-contact">

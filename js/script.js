@@ -7,7 +7,7 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 const root = new Vue({
    el: '#root',
    data: {
-      serch: '',
+      search: '',
       personalMessage: '',
       currenContact: 0,
       d : dayjs().format('DD/MM/YYYY hh:mm:ss'),
@@ -130,6 +130,13 @@ const root = new Vue({
             status: 'received'
          }
          this.contacts[this.currenContact].messages.push(answer);
+      },
+      searchContact() {
+         for (let i = 0; i < this.contacts.length; i++){
+            if (this.search !== this.contacts[i].name) {
+               this.contacts[i].visible = false;
+            };
+         }
       }
    }
    
