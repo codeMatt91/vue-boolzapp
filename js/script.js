@@ -132,11 +132,18 @@ const root = new Vue({
          this.contacts[this.currenContact].messages.push(answer);
       },
       searchContact() {
+         // let upperWord = this.search.split(' ').charAt(0).toUpperCase().join();
+         
          for (let i = 0; i < this.contacts.length; i++){
             if (this.search !== this.contacts[i].name) {
                this.contacts[i].visible = false;
             };
-         }
+            if (this.search === '') {
+               this.contacts[i].visible = true;
+            }
+         };
+         this.search = '';
+
       }
    }
    
