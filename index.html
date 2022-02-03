@@ -75,7 +75,7 @@
                     role="button"
                     v-for="(contact, index) in contacts"
                     :class="(index === currenContact) ? 'selected' : ''"
-                    @click="isSelected(index)"
+                    @click="setSelected(index)"
                     v-if="contact.visible"
                   >
                     <img
@@ -122,7 +122,7 @@
                 <div>
                   <div
                     v-for="(message, index) in contacts[currenContact].messages"
-                    :class="message.status === 'sent' ? 'sent' : 'received'"
+                    :class="message.status "
                   >
                     <div
                       class="message"

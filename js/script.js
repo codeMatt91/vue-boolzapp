@@ -101,7 +101,7 @@ const root = new Vue({
     ],
   },
   methods: {
-    isSelected(index) {
+    setSelected(index) {
       this.currenContact = index;
     },
     isChecked(index) {
