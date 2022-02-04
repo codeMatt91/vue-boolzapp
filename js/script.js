@@ -153,7 +153,7 @@ const root = new Vue({
         this.showCurtain = "d-none";
       }
     },
-    deletMessage(index) {
+    deleteMessage(index) {
       this.contacts[this.currenContact].messages.splice(index, 1);
       // this.contacts[currenContact].messages = this.contacts[
       //   currenContact
